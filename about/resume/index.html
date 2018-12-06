@@ -6,6 +6,7 @@
   <meta name=viewport content="width=device-width,initial-scale=1">
   <link rel=icon href=/favicon.ico>
   <link href=/static/style/main.css rel=stylesheet>
+  <link href=/static/style/resume.css rel=stylesheet>
   <script src="/static/js/app.js"></script>
   <title>Résumé | hardboiled65</title>
 </head>
@@ -31,7 +32,7 @@
         <a href="/about">About</a>
         <ul class="sub-list">
           <li><a href="/about">me</a></li>
-          <li><a href="/about/resume">resume</a></li>
+          <li><a href="/about/resume">résumé</a></li>
         </ul>
       </li>
       <li>
@@ -66,8 +67,87 @@
     </ul>
   </nav>
   <section id="main-section">
-    <h2>Résumé</h2>
-    <p>blah blah</p>
+    <h2 class="l10n" lang="en">Résumé</h2>
+    <h2 class="l10n" lang="ko">이력서</h2>
+
+    <article>
+      <h3 class="l10n" lang="en">Intro</h3>
+      <h3 class="l10n" lang="ko">소개</h3>
+      <div class="row">
+        <span class="col-1">nickname</span>
+        <span class="col-2">hardboiled65</span>
+      </div>
+      <div class="row">
+        <span class="col-1">email</span>
+        <span class="col-2"><a href="mailto:hardboiled65@gmail.com">hardboiled65@gmail.com</a></span>
+      </div>
+      <div class="row">
+        <span class="col-1">website</span>
+        <span class="col-2"><a href="https://hardboiled65.tk">hardboiled65.tk</a></span>
+      </div>
+      <div class="row">
+        <span class="l10n col-1" lang="en">location</span>
+        <span class="l10n col-1" lang="ko">거주지</span>
+        <span class="l10n col-2" lang="en">Korea, Republic of</span>
+        <span class="l10n col-2" lang="ko">한국</span>
+    </article>
+
+    <article>
+      <h3 class="l10n" lang="en">Skills</h3>
+      <h3 class="l10n" lang="ko">보유 기술</h3>
+      <div class="row">
+        <span class="l10n col-1" lang="en">Linux</span>
+        <span class="l10n col-1" lang="ko">리눅스</span>
+        <span class="l10n col-2" lang="en">I'm using Linux as a desktop OS since 2009. I experienced many Linux distributions such as Ubuntu, Fedora, Arch Linux, etc. I'm very comfortable with CLI environment and have knowledge about Linux very highly.</span>
+        <span class="l10n col-2" lang="ko">2009년 부터 데스크톱 운영체제로 리눅스를 사용중임. 우분투, 페도라, 아치 리눅스 등 여러 배포판을 사용해 봤으며 커맨드라인 환경에 익숙함. 그 외 리눅스에 대한 매우 높은 지식 보유.</span>
+      </div>
+      <div class="row">
+        <span class="col-1">C++</span>
+        <span class="l10n col-2" lang="en">I'm developing an open source library written in modern C++. Good at using STL.</span>
+        <span class="l10n col-2" lang="ko">모던 C++를 이용한 오픈소스 라이브러리를 개발중에 있으며, STL 사용에 능숙함.</span>
+      </div>
+      <div class="row">
+        <span class="col-1">Python</span>
+        <span class="l10n col-2" lang="en">Mainly use in scripting, CLI tools. I can make simple web server with Flask, and have experience a project with django.</span>
+        <span class="l10n col-2" lang="ko">스크립트, 명령행 도구 제작에 주로 사용. Flask를 이용한 간단한 웹 서버를 구축할 수 있으며 django를 이용한 프로젝트에 일부 참여한 경험 있음.</span>
+      </div>
+      <div class="row">
+        <span class="col-1">Javascript</span>
+        <span class="l10n col-2" lang="en">js sucks.</span>
+        <span class="l10n col-2" lang="ko">자바스크립트가 싫어요.</span>
+      </div>
+      <div class="row">
+        <span class="col-1">Vue.js</span>
+        <span class="l10n col-2" lang="en">I &lt;3 Vue.</span>
+        <span class="l10n col-2" lang="ko">I &lt;3 Vue.</span>
+      </div>
+    </article>
+
+    <article>
+      <h3 class="l10n" lang="en">Employment</h3>
+      <h3 class="l10n" lang="ko">고융 이력</h3>
+      <div class="row">
+        <span class="col-1">2018 -&nbsp;</span>
+        <span class="l10n col-2" lang="en">Launch Pack</span>
+        <span class="l10n col-2" lang="ko">런치팩 주식회사</span>
+        <span class="l10n col-3" lang="en">
+          <span class="represent">Software engineer</span>, Front-end web developer, Back-end web developer, Vue.js, django, AWS, Docker, and all about development.
+        </span>
+        <span class="l10n col-3" lang="ko">
+          <span class="represent">소프트웨어 엔지니어</span>, 프론트엔드 웹 개발자, 백엔드 웹 개발자, Vue.js, django, AWS, Docker, 그 외 개발에 관한 모든 것.
+        </span>
+      </div>
+    </article>
+
+    <article>
+      <h3 class="l10n" lang="en">Education</h3>
+      <h3 class="l10n" lang="ko">학력사항</h3>
+      <div class="row">
+        <span class="col-1">2014 -&nbsp;</span>
+        <span class="l10n col-2" lang="en">Korea National Open University, Computer science (junior, hyuhakjung)</span>
+        <span class="l10n col-2" lang="ko">한국방송통신대학교 컴퓨터과학과 (3학년, 휴학중)</span>
+      </div>
+    </article>
   </section>
   <footer>
     <p>Copyright &copy; 2018 hardboiled65. All rights reserved.</p>

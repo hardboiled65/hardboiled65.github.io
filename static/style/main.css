@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif+KR);
+
 html, body, h1, h2, h3, ul, p, button {
   margin: 0;
   padding: 0;
@@ -51,6 +53,10 @@ body > nav li {
 
 #main-section > h2 {
   margin-bottom: 12px;
+}
+
+#main-section > article {
+  font-family: 'Noto Serif', 'Noto Serif KR', serif;
 }
 
 body > footer {
