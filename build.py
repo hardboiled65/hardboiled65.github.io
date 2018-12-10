@@ -24,6 +24,9 @@ with open('src/nav.html', 'r') as f:
 with open('src/footer.html', 'r') as f:
     footer_html = f.read()
 
+with open('src/language.html', 'r') as f:
+    language_html = f.read()
+
 ## Build home page.
 # Read templates.
 with open('src/index.html', 'r') as f:
@@ -34,7 +37,8 @@ with open('index.html', 'w') as f:
     f.write(render(root_index_template,
         header=header_html,
         nav=nav_html,
-        footer=footer_html))
+        footer=footer_html,
+        language=language_html))
 
 ## Build about page.
 # Read templates.
@@ -49,13 +53,15 @@ with open('about/index.html', 'w') as f:
     f.write(render(about_index_template,
         header=header_html,
         nav=nav_html,
-        footer=footer_html))
+        footer=footer_html,
+        language=language_html))
 
 with open('about/resume/index.html', 'w') as f:
     f.write(render(about_resume_index_template,
         header=header_html,
         nav=nav_html,
-        footer=footer_html))
+        footer=footer_html,
+        language=language_html))
 
 ## Build projects page.
 # Read templates.
@@ -67,4 +73,5 @@ with open('projects/index.html', 'w') as f:
     f.write(render(projects_index_template,
         header=header_html,
         nav=nav_html,
-        footer=footer_html))
+        footer=footer_html,
+        language=language_html))

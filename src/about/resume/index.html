@@ -7,138 +7,159 @@
   <link rel=icon href=/favicon.ico>
   <link href=/static/style/main.css rel=stylesheet>
   <link href=/static/style/resume.css rel=stylesheet>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="/static/js/app.js"></script>
+  <script src="/static/js/resume.js"></script>
   <title>Résumé | hardboiled65</title>
 </head>
 <body onload="onLoad()">
   <%= header %>
-  <%= nav %>
   <section id="main-section">
-    <h2 class="l10n" lang="en">Résumé</h2>
-    <h2 class="l10n" lang="ko">이력서</h2>
-
-    <article>
-      <h3 class="l10n" lang="en">Intro</h3>
-      <h3 class="l10n" lang="ko">소개</h3>
-      <div class="row">
-        <span class="col-1">nickname</span>
-        <span class="col-2">hardboiled65</span>
-      </div>
-      <div class="row">
-        <span class="col-1">email</span>
-        <span class="col-2"><a href="mailto:hardboiled65@gmail.com">hardboiled65@gmail.com</a></span>
-      </div>
-      <div class="row">
-        <span class="col-1">website</span>
-        <span class="col-2"><a href="https://hardboiled65.tk">hardboiled65.tk</a></span>
-      </div>
-      <div class="row">
-        <span class="l10n col-1" lang="en">location</span>
-        <span class="l10n col-1" lang="ko">거주지</span>
-        <span class="l10n col-1" lang="ja">在所</span>
-        <span class="l10n col-2" lang="en">Korea, Republic of</span>
-        <span class="l10n col-2" lang="ko">한국</span>
-        <span class="l10n col-2" lang="ja">韓国</span>
-    </article>
-
-    <article>
-      <h3 class="l10n" lang="en">Skills</h3>
-      <h3 class="l10n" lang="ko">보유 기술</h3>
-      <div class="row">
-        <span class="l10n col-1" lang="en">Linux</span>
-        <span class="l10n col-1" lang="ko">리눅스</span>
-        <span class="l10n col-1" lang="ja">リナックス</span>
-        <span class="l10n col-2" lang="en">I'm using Linux as a desktop OS since 2009. I experienced many Linux distributions such as Ubuntu, Fedora, Arch Linux, etc. I'm very comfortable with CLI environment and have knowledge about Linux very highly.</span>
-        <span class="l10n col-2" lang="ko">2009년 부터 데스크톱 운영체제로 리눅스를 사용중임. 우분투, 페도라, 아치 리눅스 등 여러 배포판을 사용해 봤으며 커맨드라인 환경에 익숙함. 그 외 리눅스에 대한 매우 높은 지식 보유.</span>
-        <span class="l10n col-2" lang="ja">２００９年からメインＯＳとして使っています。上手に使います。</span>
-      </div>
-      <div class="row">
-        <span class="col-1">C++</span>
-        <span class="l10n col-2" lang="en">I'm developing an open source library written in modern C++. Good at using STL.</span>
-        <span class="l10n col-2" lang="ko">모던 C++를 이용한 오픈소스 라이브러리를 개발중에 있으며, STL 사용에 능숙함.</span>
-        <span class="l10n col-2" lang="ja">モダンC++を使ったオープンソースライブラリを開発しています。STLを上手く使うことが出来ます。</span>
-      </div>
-      <div class="row">
-        <span class="col-1">Python</span>
-        <span class="l10n col-2" lang="en">Mainly use in scripting, CLI tools. I can make simple web server with Flask, and have experience a project with django.</span>
-        <span class="l10n col-2" lang="ko">스크립트, 명령행 도구 제작에 주로 사용. Flask를 이용한 간단한 웹 서버를 구축할 수 있으며 django를 이용한 프로젝트에 일부 참여한 경험 있음.</span>
-        <span class="l10n col-2" lang="ja">スクリプト、CLIツール作りなどによく利用。簡単なウェブサーバーが作ります。djangoを使った経験があります。</span>
-      </div>
-      <div class="row">
-        <span class="col-1">Javascript</span>
-        <span class="l10n col-2" lang="en">js sucks.</span>
-        <span class="l10n col-2" lang="ko">자바스크립트가 싫어요.</span>
-        <span class="l10n col-2" lang="ja">Javascriptキライ。</span>
-      </div>
-      <div class="row">
-        <span class="col-1">Vue.js</span>
-        <span class="l10n col-2" lang="en">I &lt;3 Vue.</span>
-        <span class="l10n col-2" lang="ko">I &lt;3 Vue.</span>
-        <span class="l10n col-2" lang="ja">これダイスキ。</span>
-      </div>
-    </article>
-
-    <article>
-      <h3 class="l10n" lang="en">Employment</h3>
-      <h3 class="l10n" lang="ko">고융 이력</h3>
-      <h3 class="l10n" lang="ja">雇用履歴</h3>
-      <div class="row">
-        <span class="col-1">2018 -&nbsp;</span>
-        <span class="l10n col-2" lang="en">Launch Pack</span>
-        <span class="l10n col-2" lang="ko">런치팩 주식회사</span>
-        <span class="l10n col-2" lang="ja">Launch Pack</span>
-        <span class="l10n col-3" lang="en">
-          <span class="represent">Software engineer</span>, Front-end web developer, Back-end web developer, Vue.js, django, AWS, Docker, and all about development.
-        </span>
-        <span class="l10n col-3" lang="ko">
-          <span class="represent">소프트웨어 엔지니어</span>, 프론트엔드 웹 개발자, 백엔드 웹 개발자, Vue.js, django, AWS, Docker, 그 외 개발에 관한 모든 것.
-        </span>
-        <span class="l10n col-3" lang="ja">
-          <span class="represent">Software engineer</span>, Front-end web developer, Back-end web developer, Vue.js, django, AWS, Docker, and all about development.
-        </span>
-      </div>
-    </article>
-
-    <article>
-      <h3 class="l10n" lang="en">Education</h3>
-      <h3 class="l10n" lang="ko">학력사항</h3>
-      <h3 class="l10n" lang="ja">学力</h3>
-      <div class="row">
-        <span class="col-1">2014 -&nbsp;</span>
-        <span class="l10n col-2" lang="en">Korea National Open University, Computer science (junior, hyuhakjung)</span>
-        <span class="l10n col-2" lang="ko">한국방송통신대학교 컴퓨터과학과 (3학년, 휴학중)</span>
-        <span class="l10n col-2" lang="ja">韓国放送通信大学 Computer science（３年生、休学中）</span>
-      </div>
-    </article>
-
-    <article>
-      <h3 class="l10n" lang="en">Languages</h3>
-      <h3 class="l10n" lang="ko">언어</h3>
-      <h3 class="l10n" lang="ja">言語</h3>
-      <div class="row">
-        <span class="l10n col-1" lang="en">Korean</span>
-        <span class="l10n col-1" lang="ko">한국어</span>
-        <span class="l10n col-1" lang="ja">韓国語</span>
-        <span class="l10n col-2" lang="en">Korean is my native language. You can contact me in korean with no hesitate.</span>
-        <span class="l10n col-2" lang="ko">한국어를 모국어로 사용합니다. 한국어를 이용한 의사소통에 있어 아무런 문제가 없습니다.</span>
-        <span class="l10n col-2" lang="ja">母語である。</span>
-      </div>
-      <div class="row">
-        <span class="l10n col-1" lang="en">English</span>
-        <span class="l10n col-1" lang="ko">영어</span>
-        <span class="l10n col-1" lang="ja">英語</span>
-        <span class="l10n col-2" lang="en">I have some trouble in talking in english. But it's no problem to reading technical documents. I prefer english in development more than my native language.</span>
-        <span class="l10n col-2" lang="ko">영어를 이용한 회화에 미숙합니다. 다만 영어로 된 기술 문서를 읽는것에 큰 어려움은 없습니다(오히려 영어를 선호합니다).</span>
-        <span class="l10n col-2" lang="ja">英語は苦手です。</span>
-      </div>
-      <div class="row">
-        <span class="l10n col-1" lang="en">Japanese</span>
-        <span class="l10n col-1" lang="ko">일본어</span>
-        <span class="l10n col-1" lang="ja">日本語</span>
-        <span class="l10n col-2" lang="en">I can use simple japanese in conversational without big problem.</span>
-        <span class="l10n col-2" lang="ko">간단한 일상회화가 가능한 수준입니다.</span>
-        <span class="l10n col-2" lang="ja">日常会話は少しできます。むずかしい漢字は読めません。</span>
-      </div>
+    <%= nav %>
+    <article id="main-article">
+      <header>
+        <h2 class="l10n" lang="en">Résumé</h2>
+        <h2 class="l10n" lang="ko">이력서</h2>
+        <h2 class="l10n" lang="ja">履歴書</h2>
+        <%= language %>
+      </header>
+      <!-- Intro -->
+      <article id="intro">
+        <h3 class="l10n" lang="en">Intro</h3>
+        <h3 class="l10n" lang="ko">소개</h3>
+        <h3 class="l10n" lang="ja">紹介</h3>
+        <div class="row" id="nickname">
+          <span class="col-1">nickname</span>
+          <span class="col-2">hardboiled65</span>
+        </div>
+        <div class="row" id="email">
+          <span class="col-1">email</span>
+          <span class="col-2"><a href="mailto:hardboiled65@gmail.com">hardboiled65@gmail.com</a></span>
+        </div>
+        <div class="row" id="website">
+          <span class="col-1">website</span>
+          <span class="col-2"><a href="https://hardboiled65.tk">hardboiled65.tk</a></span>
+        </div>
+        <div class="row" id="location">
+          <span class="l10n col-1" lang="en">location</span>
+          <span class="l10n col-1" lang="ko">거주지</span>
+          <span class="l10n col-1" lang="ja">在所</span>
+          <span class="l10n col-2" lang="en">Korea, Republic of</span>
+          <span class="l10n col-2" lang="ko">한국</span>
+          <span class="l10n col-2" lang="ja">韓国</span>
+        </div>
+        <div id="secret">
+          <div class="secret-info">
+            <span class="l10n" lang="en">Private informations are not public.</span>
+            <span class="l10n" lang="ko">개인 신상 정보는 허가된 사용자만 볼 수 있습니다.</span>
+            <span class="l10n" lang="ja">Private informations are not public.</span>
+          </div>
+          <input id="secret-key-input" type="text">
+          <button id="secret-key-button" disabled>Confirm</button>
+          <div id="secret-key-error"></div>
+        </div>
+      </article>
+      <!-- Skills -->
+      <article>
+        <h3 class="l10n" lang="en">Skills</h3>
+        <h3 class="l10n" lang="ko">보유 기술</h3>
+        <h3 class="l10n" lang="ja">Skills</h3>
+        <div class="row">
+          <span class="l10n col-1" lang="en">Linux</span>
+          <span class="l10n col-1" lang="ko">리눅스</span>
+          <span class="l10n col-1" lang="ja">リナックス</span>
+          <span class="l10n col-2" lang="en">I'm using Linux as a desktop OS since 2009. I experienced many Linux distributions such as Ubuntu, Fedora, Arch Linux, etc. I'm very comfortable with CLI environment and have knowledge about Linux very highly.</span>
+          <span class="l10n col-2" lang="ko">2009년 부터 데스크톱 운영체제로 리눅스를 사용중임. 우분투, 페도라, 아치 리눅스 등 여러 배포판을 사용해 봤으며 커맨드라인 환경에 익숙함. 그 외 리눅스에 대한 매우 높은 지식 보유.</span>
+          <span class="l10n col-2" lang="ja">２００９年からメインＯＳとして使っています。上手に使います。</span>
+        </div>
+        <div class="row">
+          <span class="col-1">C++</span>
+          <span class="l10n col-2" lang="en">I'm developing an open source library written in modern C++. Good at using STL.</span>
+          <span class="l10n col-2" lang="ko">모던 C++를 이용한 오픈소스 라이브러리를 개발중에 있으며, STL 사용에 능숙함.</span>
+          <span class="l10n col-2" lang="ja">モダンC++を使ったオープンソースライブラリを開発しています。STLを上手く使うことが出来ます。</span>
+        </div>
+        <div class="row">
+          <span class="col-1">Python</span>
+          <span class="l10n col-2" lang="en">Mainly use in scripting, CLI tools. I can make simple web server with Flask, and have experience a project with django.</span>
+          <span class="l10n col-2" lang="ko">스크립트, 명령행 도구 제작에 주로 사용. Flask를 이용한 간단한 웹 서버를 구축할 수 있으며 django를 이용한 프로젝트에 일부 참여한 경험 있음.</span>
+          <span class="l10n col-2" lang="ja">スクリプト、CLIツール作りなどによく利用。簡単なウェブサーバーが作ります。djangoを使った経験があります。</span>
+        </div>
+        <div class="row">
+          <span class="col-1">Javascript</span>
+          <span class="l10n col-2" lang="en">I'm using Javascript as front-end development language and I can use it very well now. I have experience of ES6 Promise based asynchronous function. I love to write standard, compatible code refer to MDN documents. I'm good at controlling visual elements with DOM events. Back-end development using Node.js is not my special but I have some knowledges to configure or make plugins for Webpack.</span>
+          <span class="l10n col-2" lang="ko">프론트엔드 개발을 위해 배우기 시작하여 현재 매우 능숙하게 다룰 수 있는 언어 중 하나입니다. ES6 Promise 기반 비동기 함수 구현이 가능. MDN 문서를 참조하여 표준을 지키며 호환성 있는 코드를 작성하는데 관심이 있음. 각종 DOM 이벤트를 이용하여 시각적인 요소를 컨트롤 하는 데에 능숙함. Node.js를 이용한 백엔드 개발엔 미숙하지만 Webpack 설정 및 플러그인 개발 등을 위한 지식은 보유하고 있습니다. </span>
+          <span class="l10n col-2" lang="ja">Javascriptキライ。</span>
+        </div>
+        <div class="row">
+          <span class="col-1">Vue.js</span>
+          <span class="l10n col-2" lang="en">At first, I chose Vue.js as the replacement of Backbone.js for my open source project's web demo page becuase of reactivity issue. Vue is currently main framework in my job therefore I'm using many advanced techniques. I am interested in MVVM pattern which is Vue.js based, thus I want to know not only it's usage but also it's basic structure. I have knowledge in SPA routing with vue-router and state management with Vuex.</span>
+          <span class="l10n col-2" lang="ko">프로젝트의 반응성 있는 웹 데모 페이지 개발을 위해 Backbone.js의 가벼운 대체재로 시작한 이후 현업에서 주력 프레임워크로 사용하기 시작하며 높은 수준의 기능까지 적극 활용하고 있음. 현재 Vue.js가 채택한 MVVM 패턴에 흥미를 가지고 꾸준히 공부하고 있습니다. vue-router를 통한 SPA 라우팅에 익숙하며 Vuex를 통해 상태 관리에 대한 어느정도의 지식을 보유하고 있음.</span>
+          <span class="l10n col-2" lang="ja">これダイスキ。</span>
+        </div>
+      </article>
+      <!-- Employment -->
+      <article>
+        <h3 class="l10n" lang="en">Employment</h3>
+        <h3 class="l10n" lang="ko">고융 이력</h3>
+        <h3 class="l10n" lang="ja">雇用履歴</h3>
+        <div class="row">
+          <span class="col-1">2018 -&nbsp;</span>
+          <span class="l10n col-2" lang="en">Launch Pack</span>
+          <span class="l10n col-2" lang="ko">런치팩 주식회사</span>
+          <span class="l10n col-2" lang="ja">Launch Pack</span>
+          <span class="l10n col-3" lang="en">
+            <span class="represent">Software engineer</span>, Front-end web developer, Back-end web developer, Vue.js, django, AWS, Docker, and all about development.
+          </span>
+          <span class="l10n col-3" lang="ko">
+            <span class="represent">소프트웨어 엔지니어</span>, 프론트엔드 웹 개발자, 백엔드 웹 개발자, Vue.js, django, AWS, Docker, 그 외 개발에 관한 모든 것.
+          </span>
+          <span class="l10n col-3" lang="ja">
+            <span class="represent">Software engineer</span>, Front-end web developer, Back-end web developer, Vue.js, django, AWS, Docker, and all about development.
+          </span>
+        </div>
+      </article>
+      <!-- Education -->
+      <article>
+        <h3 class="l10n" lang="en">Education</h3>
+        <h3 class="l10n" lang="ko">학력사항</h3>
+        <h3 class="l10n" lang="ja">学力</h3>
+        <div class="row">
+          <span class="col-1">2014 -&nbsp;</span>
+          <span class="l10n col-2" lang="en">Korea National Open University, Computer science (junior, leave of absence)</span>
+          <span class="l10n col-2" lang="ko">한국방송통신대학교 컴퓨터과학과 (3학년, 휴학중)</span>
+          <span class="l10n col-2" lang="ja">韓国放送通信大学 Computer science（３年生、休学中）</span>
+        </div>
+      </article>
+      <!-- Languages -->
+      <article>
+        <h3 class="l10n" lang="en">Languages</h3>
+        <h3 class="l10n" lang="ko">언어</h3>
+        <h3 class="l10n" lang="ja">言語</h3>
+        <div class="row">
+          <span class="l10n col-1" lang="en">Korean</span>
+          <span class="l10n col-1" lang="ko">한국어</span>
+          <span class="l10n col-1" lang="ja">韓国語</span>
+          <span class="l10n col-2" lang="en">Korean is my native language. You can contact me in korean with no hesitate.</span>
+          <span class="l10n col-2" lang="ko">한국어를 모국어로 사용합니다. 한국어를 이용한 의사소통에 있어 아무런 문제가 없습니다.</span>
+          <span class="l10n col-2" lang="ja">母語である。</span>
+        </div>
+        <div class="row">
+          <span class="l10n col-1" lang="en">English</span>
+          <span class="l10n col-1" lang="ko">영어</span>
+          <span class="l10n col-1" lang="ja">英語</span>
+          <span class="l10n col-2" lang="en">I have some trouble in talking in english. But it's no problem to reading technical documents. I prefer english in development more than my native language.</span>
+          <span class="l10n col-2" lang="ko">영어를 이용한 회화에 미숙합니다. 다만 영어로 된 기술 문서를 읽는것에 큰 어려움은 없습니다(오히려 영어를 선호합니다).</span>
+          <span class="l10n col-2" lang="ja">英語は苦手です。</span>
+        </div>
+        <div class="row">
+          <span class="l10n col-1" lang="en">Japanese</span>
+          <span class="l10n col-1" lang="ko">일본어</span>
+          <span class="l10n col-1" lang="ja">日本語</span>
+          <span class="l10n col-2" lang="en">I can use simple japanese in conversational without big problem.</span>
+          <span class="l10n col-2" lang="ko">간단한 일상회화가 가능한 수준입니다.</span>
+          <span class="l10n col-2" lang="ja">日常会話は少しできます。むずかしい漢字は読めません。</span>
+        </div>
+      </article>
     </article>
   </section>
   <%= footer %>

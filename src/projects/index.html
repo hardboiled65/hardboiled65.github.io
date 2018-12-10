@@ -12,103 +12,126 @@
 </head>
 <body onload="onLoad()">
   <%= header %>
-  <%= nav %>
   <section id="main-section">
-    <h2>Projects</h2>
-    <article id="seshat" class="project">
-      <h3>Seshat</h3>
-      <img src="https://raw.githubusercontent.com/hardboiled65/Seshat/master/docs/logo/seshat-logo-440x132.png">
-      <p class="l10n" lang="en">Unicode library</p>
-      <p class="l10n" lang="ko">유니코드 라이브러리</p>
-      <p class="l10n" lang="ja">ユニコードライブラリ</p>
-      <aside>
-        <header>Links:</header>
-        <ul>
-          <li>
-            <a class="external" target="_blank"
-              href="https://github.com/hardboiled65/Seshat">
-              <img src="/static/image/icon-home.svg" width="16" height="16">
-              <span class="l10n" lang="en">Project home page</span>
-              <span class="l10n" lang="ko">프로젝트 홈페이지</span>
-              <span class="l10n" lang="ja">プロジェクトのホームページ</span>
-            </a>
-          </li>
-          <li>
-            <a class="external" target="_blank"
-              href="https://github.com/hardboiled65/Seshat">
-              <img src="/static/image/icon-repo.svg" width="16" height="16">
-              <span class="l10n" lang="en">Source code repository</span>
-              <span class="l10n" lang="ko">소스 코드 저장소</span>
-              <span class="l10n" lang="ja">ソースコードリポジトリ</span>
-            </a>
-          </li>
-          <li>
-            <a class="external" target="_blank"
-              href="https://demo.libseshat.tk">
-              <img src="/static/image/icon-demo.svg" width="16" height="16">
-              <span class="l10n" lang="en">Demo page</span>
-              <span class="l10n" lang="ko">데모 페이지</span>
-              <span class="l10n" lang="ja">デモ用のページ</span>
-            </a>
-          </li>
-        </ul>
-      </aside>
-    </article>
-    <article id="vuetk" class="project">
-      <h3>VueTK</h3>
-      <p>Vue widget toolkit</p>
-      <aside>
-        <header>Links:</header>
-        <ul>
-          <li>
-            <a class="external" target="_blank"
-              href="/vuetk">
-              <img src="/static/image/icon-home.svg" width="16" height="16">
-              <span class="l10n" lang="en">Project home page</span>
-              <span class="l10n" lang="ko">프로젝트 홈페이지</span>
-              <span class="l10n" lang="ja">プロジェクトのホームページ</span>
-            </a>
-          </li>
-          <li>
-            <a class="external" target="_blank"
-              href="https://github.com/hardboiled65/vuetk">
-              <img src="/static/image/icon-repo.svg" width="16" height="16">
-              <span class="l10n" lang="en">Source code repository</span>
-              <span class="l10n" lang="ko">소스 코드 저장소</span>
-              <span class="l10n" lang="ja">ソースコードリポジトリ</span>
-            </a>
-          </li>
-        </ul>
-      </aside>
-    </article>
-    <article id="vue-pulley" class="project">
-      <h3>vue-pulley</h3>
-      <p class="l10n" lang="en">Scrollbar grandmaster</p>
-      <p class="l10n" lang="ko">스크롤바 깎는 노인</p>
-      <p class="l10n" lang="ja">Scrollbar grandmaster</p>
-      <aside>
-        <header>Links:</header>
-        <ul>
-          <li>
-            <a class="external" target="_blank"
-              href="https://github.com/hardboiled65/vue-pulley">
-              <img src="/static/image/icon-home.svg" width="16" height="16">
-              <span class="l10n" lang="en">Project home page</span>
-              <span class="l10n" lang="ko">프로젝트 홈페이지</span>
-              <span class="l10n" lang="ja">プロジェクトのホームページ</span>
-            </a>
-          </li>
-          <li>
-            <a class="external" target="_blank"
-              href="https://github.com/hardboiled65/vue-pulley">
-              <img src="/static/image/icon-repo.svg" width="16" height="16">
-              <span class="l10n" lang="en">Source code repository</span>
-              <span class="l10n" lang="ko">소스 코드 저장소</span>
-              <span class="l10n" lang="ja">ソースコードリポジトリ</span>
-            </a>
-          </li>
-        </ul>
-      </aside>
+    <%= nav %>
+    <article id="main-article">
+      <header>
+        <h2>Projects</h2>
+        <%= language %>
+      </header>
+      <article id="seshat" class="project">
+        <h3>Seshat</h3>
+        <img src="https://raw.githubusercontent.com/hardboiled65/Seshat/master/docs/logo/seshat-logo-440x132.png">
+        <p class="l10n" lang="en">Unicode library</p>
+        <p class="l10n" lang="ko">유니코드 라이브러리</p>
+        <p class="l10n" lang="ja">ユニコードライブラリ</p>
+        <p class="l10n" lang="en">Seshat is a Unicode library written in modern C++</p>
+        <p class="l10n" lang="ko">Seshat(세스헤트)는 모던 C++를 이용해 작성하는 유니코드 라이브러리 입니다. 완전한 유니코드 표준 알고리즘의 구현과 보다 높은 수준의 추상화로 사용하기 쉬운 API를 제공하여 ICU를 대체할 수 있는 수준으로 개발하는것을 목표로 하고 있습니다.</p>
+        <p class="l10n" lang="ja">Seshat is a Unicode library written in modern C++</p>
+        <aside>
+          <header>Links:</header>
+          <ul>
+            <li>
+              <a class="external" target="_blank"
+                href="https://github.com/hardboiled65/Seshat">
+                <img src="/static/image/icon-home.svg" width="16" height="16">
+                <span class="l10n" lang="en">Project home page</span>
+                <span class="l10n" lang="ko">프로젝트 홈페이지</span>
+                <span class="l10n" lang="ja">プロジェクトのホームページ</span>
+              </a>
+            </li>
+            <li>
+              <a class="external" target="_blank"
+                href="https://github.com/hardboiled65/Seshat">
+                <img src="/static/image/icon-repo.svg" width="16" height="16">
+                <span class="l10n" lang="en">Source code repository</span>
+                <span class="l10n" lang="ko">소스 코드 저장소</span>
+                <span class="l10n" lang="ja">ソースコードリポジトリ</span>
+              </a>
+            </li>
+            <li>
+              <a class="external" target="_blank"
+                href="https://demo.libseshat.tk">
+                <img src="/static/image/icon-demo.svg" width="16" height="16">
+                <span class="l10n" lang="en">Demo page</span>
+                <span class="l10n" lang="ko">데모 페이지</span>
+                <span class="l10n" lang="ja">デモ用のページ</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </article>
+      <article id="vuetk" class="project">
+        <h3>VueTK</h3>
+        <p>Vue widget toolkit</p>
+        <p class="l10n" lang="en">Widget toolkit for desktop web app UI development.</p>
+        <p class="l10n" lang="ko">데스크톱 웹 앱 UI 개발을 위한 위젯 툴킷. Google Docs와 같은 키보드/마우스 인터페이스에 최적화된 UI 구성을 제공하며 적은 노력으로 높은 퀄리티의 디자인을 가능하게 함.</p>
+        <p class="l10n" lang="ja">Widget toolkit for desktop web app UI development.</p>
+        <aside>
+          <header>Links:</header>
+          <ul>
+            <li>
+              <a class="external" target="_blank"
+                href="/vuetk">
+                <img src="/static/image/icon-home.svg" width="16" height="16">
+                <span class="l10n" lang="en">Project home page</span>
+                <span class="l10n" lang="ko">프로젝트 홈페이지</span>
+                <span class="l10n" lang="ja">プロジェクトのホームページ</span>
+              </a>
+            </li>
+            <li>
+              <a class="external" target="_blank"
+                href="https://github.com/hardboiled65/vuetk">
+                <img src="/static/image/icon-repo.svg" width="16" height="16">
+                <span class="l10n" lang="en">Source code repository</span>
+                <span class="l10n" lang="ko">소스 코드 저장소</span>
+                <span class="l10n" lang="ja">ソースコードリポジトリ</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </article>
+      <article id="vue-pulley" class="project">
+        <h3>vue-pulley</h3>
+        <p class="l10n" lang="en">Vue.js directive for custom scrollbar that mimics macOS scrollbar.</p>
+        <p class="l10n" lang="ko">macOS의 스크롤바를 흉내내어 만든 Vue.js용 directive.</p>
+        <p class="l10n" lang="ja">Vue 2 directive for custom scrollbar that mimics macOS scrollbar.</p>
+        <p class="l10n" lang="en">vue-pulley is a replica of floating scrollbar in macOS.</p>
+        <p class="l10n" lang="ko">운영체제와 브라우저 간에 상이하게 다른 스크롤바의 너비로 인해 맥 환경에서 작업하는 디자이너의 결과물과 달라지는 시각적인 거슬림을 해소하기 위해 제작하게 된 커스텀 스크롤바. 모양 뿐 아니라 통일성 있는 사용자 경험을 위해 맥 OS의 스크롤바의 세세한 동작까지 재현하는것을 목표로 함.</p>
+        <p class="l10n" lang="ja">vue-pulley is a replica of floating scrollbar in macOS.</p>
+        <aside>
+          <header>Links:</header>
+          <ul>
+            <li>
+              <a class="external" target="_blank"
+                href="https://github.com/hardboiled65/vue-pulley">
+                <img src="/static/image/icon-home.svg" width="16" height="16">
+                <span class="l10n" lang="en">Project home page</span>
+                <span class="l10n" lang="ko">프로젝트 홈페이지</span>
+                <span class="l10n" lang="ja">プロジェクトのホームページ</span>
+              </a>
+            </li>
+            <li>
+              <a class="external" target="_blank"
+                href="https://github.com/hardboiled65/vue-pulley">
+                <img src="/static/image/icon-repo.svg" width="16" height="16">
+                <span class="l10n" lang="en">Source code repository</span>
+                <span class="l10n" lang="ko">소스 코드 저장소</span>
+                <span class="l10n" lang="ja">ソースコードリポジトリ</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </article>
+      <article id="others" class="project">
+        <h3 class="l10n" lang="en">Non open source/proprietaries</h3>
+        <h3 class="l10n" lang="ko">비공개 및 독점 프로젝트</h3>
+        <h3 class="l10n" lang="ja">Non open source/proprietaries</h3>
+        <h4>Launch Pack&reg;</h4>
+        <p class="l10n" lang="en">Design tool for Launch Pack&reg;.</p>
+        <p class="l10n" lang="ko">네이티브 데스크톱 애플리케이션 수준의 반응성과 사용성을 제공하는 웹 기반 디자인 툴 제작에 참여.</p>
+        <p class="l10n" lang="ja">Design tool for Launch Pack&reg;.</p>
+      </article>
     </article>
   </section>
   <%= footer %>

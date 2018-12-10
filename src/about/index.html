@@ -11,10 +11,15 @@
 </head>
 <body onload="onLoad()">
   <%= header %>
-  <%= nav %>
   <section id="main-section">
-    <h2>About hardboiled65</h2>
-    <p>I am a software engineer.</p>
+    <%= nav %>
+    <article id="main-article">
+      <header>
+        <h2>About hardboiled65</h2>
+        <%= language %>
+      </header>
+      <p>I am a software engineer.</p>
+    </article>
   </section>
   <%= footer %>
 </body>

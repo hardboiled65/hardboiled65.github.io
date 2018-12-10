@@ -11,9 +11,15 @@
 </head>
 <body onload="onLoad()">
   <%= header %>
-  <%= nav %>
   <section id="main-section">
-    <p>Welcome to the hardboiled65's home page.</p>
+    <%= nav %>
+    <article id="main-article">
+      <header>
+        <h2>Home</h2>
+        <%= language %>
+      </header>
+      <p>Welcome to the hardboiled65's home page.</p>
+    </article>
   </section>
   <%= footer %>
 </body>

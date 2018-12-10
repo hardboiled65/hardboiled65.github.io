@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif+KR);
 
-html, body, h1, h2, h3, ul, p, button {
+html, body, h1, h2, h3, h4, ul, p, button {
   margin: 0;
   padding: 0;
 }
@@ -24,23 +24,45 @@ a:visited {
   color: darkcyan;
 }
 
-body > header {
+h1, h2, h3, h4 {
   font-family: sans-serif;
 }
 
-body > header .language {
+header .language {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 8px;
+  bottom: 4px;
+  height: 34px;
 }
 
-body > nav {
+header .language::after {
+  content: 'v';
   position: absolute;
-  top: 50px;
+  right: 7px;
+}
+
+
+header .language select {
+  height: 32px;
+  width: 128px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+header .language select:focus {
+  outline: none;
+}
+
+#main-section > nav {
   width: 250px;
+  flex-shrink: 0;
 }
 
-body > nav li {
+#main-section > nav li {
   list-style: none;
 }
 
@@ -48,7 +70,16 @@ body > nav li {
   background-color: lightgrey;
   flex-grow: 1;
   flex-shrink: 0;
-  padding-left: 250px;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: calc(1280px - 250px);
+}
+
+@media only screen and (max-width: 600px) {
+  #main-section {
+    flex-direction: column;
+  }
 }
 
 #main-section > h2 {
@@ -59,11 +90,31 @@ body > nav li {
   font-family: 'Noto Serif', 'Noto Serif KR', serif;
 }
 
+#main-article {
+  width: 100%;
+  flex-grow: 1;
+}
+
+#main-article > header {
+  position: relative;
+}
+
+#main-article > header h2 {
+  font-size: 32px;
+  padding-top: 16px;
+}
+
+#main-article img {
+  max-width: 100%;
+}
+
 body > footer {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
+  text-align: center;
+  height: 40px;
   width: 100%;
 }
 
