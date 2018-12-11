@@ -37,7 +37,7 @@ function onLoad() {
       break;
     }
   }
-  select.addEventListener('input', function(evt) {
+  select.addEventListener('change', function(evt) {
     localStorage.setItem('lang', evt.target.value);
     translate(localStorage.getItem('lang'));
   });
