@@ -57,6 +57,17 @@ header .language select:focus {
   outline: none;
 }
 
+#main-header {
+  flex-shrink: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+#main-header h1 {
+  margin-left: 12px;
+}
+
 #main-section > nav {
   width: 250px;
   flex-shrink: 0;
